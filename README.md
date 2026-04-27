@@ -8,6 +8,10 @@
 
 Low-light environments severely degrade RGB image quality, leading to poor performance in downstream tasks like object detection. Infrared (IR) imaging is robust in such conditions, but thermal sensors are expensive and not always available.
 
+<img width="1219" height="586" alt="image" src="https://github.com/user-attachments/assets/39cb1651-3652-440b-9d6e-3b68d0d6d7dc" />
+
+
+
 This project introduces **MV-GSB**, a novel framework that learns to translate low-light RGB images into IR-like representations while **preserving structure, semantics, and detector-relevant features**.
 
 ---
@@ -57,21 +61,8 @@ Instead of direct RGB → IR mapping, this work models the problem as a **stocha
 
 ## 🏗️ Pipeline Overview
 
-```id="b9n2we"
-RGB (Low-light)
-   ↓
-Enhancement (RAWMamba)
-   ↓
-Grayscale Conversion
-   ↓
-Schrödinger Bridge Construction
-   ↓
-MambaVision Denoiser
-   ↓
-IR Reconstruction
-   ↓
-Semantic + Task Guidance
-```
+<img width="2125" height="875" alt="mv_gsb_architecture (1)" src="https://github.com/user-attachments/assets/73e96924-1c95-449a-8b33-7dfe03926156" />
+
 
 ---
 
@@ -86,6 +77,8 @@ Final evaluation on LLVIP dataset:
 | LPIPS ↓ |   0.561 |       **0.484** |
 | mAP@0.5 |   0.015 |      **0.965+** |
 | FPS     |     ~27 |             ~27 |
+
+<img width="1657" height="847" alt="image" src="https://github.com/user-attachments/assets/f964af14-9e01-4218-ab9f-2a80cc2c9b8c" />
 
 📌 Key Insight:
 
@@ -209,12 +202,6 @@ This project shows:
 
 Department of CSE
 IIITDM Kurnool
-
----
-
-## 📜 License
-
-This project is for academic and research purposes.
 
 ---
 
