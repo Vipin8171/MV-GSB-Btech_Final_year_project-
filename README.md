@@ -212,6 +212,8 @@ This project shows:
 
 * **Vipin Tomer**
 * **Aryan Kumar**
+  
+**Under the guidance of:** [Dr. Shounak Chakraborty](https://github.com/shounakc6)
 
 Department of CSE
 IIITDM Kurnool
