@@ -66,6 +66,19 @@ Instead of direct RGB → IR mapping, this work models the problem as a **stocha
 
 ---
 
+## MV-GSB Framework
+
+The MV-GSB (MambaVision-Guided Schrödinger Bridge) framework is a generative approach for translating RGB images to infrared (IR) using a diffusion-based bridging mechanism.
+
+It first enhances input images using a RAWMamba pre-processing module, then constructs a stochastic bridge between RGB and IR domains using a Schrödinger Bridge formulation. Features are extracted through a hybrid backbone combining CNN, Mamba, and Transformer blocks for efficient and rich representation learning.
+
+The model further uses task-aware guidance (semantic and detection oracles) to ensure that generated IR images are both visually accurate and useful for downstream tasks. Training is optimized using a combination of losses for noise prediction, edge preservation, semantic alignment, and task performance.
+
+<img width="2912" height="1440" alt="arch_overview (1)" src="https://github.com/user-attachments/assets/07dbe2a0-5ca4-44f4-964d-7dcf9737c599" />
+
+
+---
+
 ## 📊 Results
 
 Final evaluation on LLVIP dataset:
